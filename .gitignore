@@ -38,5 +38,5 @@ credentials.json
 *.swp
 
 # ignore pycache folder
-__pycache__
 __pycache__/
+*.pyc
