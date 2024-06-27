@@ -3,7 +3,7 @@ from model import *
 from genetic import *
 
 # //---------------------------------HYPERPARAMETERS---------------------------------//
-path_model = "MLP_100.pth"
+path_model = "weights/MLP_100.pth"
 
 batch_size = 64
 test_batch_size = 64
