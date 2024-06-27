@@ -28,7 +28,7 @@ def genetic_quant(model, device, loader, criterion, neuron_opt=False):
     args['gaussian_stdev'] = 2
 
     args["fig_title"] = 'GA'
-    args["csv_file"] = 'neuron50_20_41.csv'
+    args["csv_file"] = 'csv/neuron50_20_41.csv'
 
     # make sure that this array has the same size as num_objs
     seed=41
