@@ -58,8 +58,16 @@ class BitsBenchmark(Benchmark):
         
 
     def generator(self, random, args):
-        
-        a =  [random.randint(1, 8) for _ in range(self.dimensions)]
+        print(self.dimensions)
+        if self.dimensions == 111:
+            a = [random.randint(1, 8)]
+            i= random.randint(1, 8)
+            a.extend([i for _ in range(100)])
+            i= random.randint(1, 8)
+            a.extend([i for _ in range(10)])
+            print(a)
+        else:
+            a =  [random.randint(1, 8) for _ in range(self.dimensions)]
         return a
 
     def evaluator(self, candidates, args):
